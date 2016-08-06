@@ -1,0 +1,22 @@
+{
+  "apps": [{
+    "name": "ghost",
+    "script": "index.js",
+    "node_args": [
+      "--harmony"
+    ],
+    "log_date_format": "YYYY-MM-DD HH:mm Z",
+    "exec_interpreter": "node",
+    "instances": "2",
+    "max_memory_restart": "300M",
+    "ignoreWatch": [
+      "[\\/\\\\]\\./",
+      "node_modules"
+    ],
+    "watch": false,
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "exec_mode": "cluster_mode"
+  }]
+}
